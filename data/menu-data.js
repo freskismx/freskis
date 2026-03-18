@@ -3,7 +3,7 @@ window.DEFAULT_MENU_DATA = [
     "id": "BURG-001",
     "categoria": "Fast Food",
     "subcategoria": "Hamburguesas",
-    "nombre": "Star Wars",
+    "nombre": "Star Wars del Chente",
     "variante": "Res",
     "descripcion": "Queso americano.",
     "tipo_precio": "Individual",
