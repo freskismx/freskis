@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freskis & La Gran Pantalla</title>
+  <meta name="description" content="Carta digital, promociones, pedidos a domicilio y experiencia interactiva de Freskis & La Gran Pantalla." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script defer src="data/menu-data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="globalNotice" class="notice-banner hidden"></div>
+
+  <a class="floating-whatsapp" href="https://wa.me/525547719349" target="_blank" rel="noopener" aria-label="Enviar WhatsApp">
+    <span class="wa-icon">✆</span>
+    <span>WhatsApp</span>
+  </a>
+
+  <header class="site-header" id="inicio">
+    <div class="header-bar">
+      <div class="brand-wrap">
+        <img src="assets/logo-freskis.jpeg" alt="Logo Freskis" class="brand-logo brand-logo-round">
+        <div class="brand-copy">
+          <p class="mini-brand">Cafetería moderna · Sabor fresco · Experiencia digital</p>
+          <h1>Freskis <span>&</span> LGP La Gran Pantalla</h1>
+        </div>
+        <img src="assets/logo-lgp.jpeg" alt="Logo La Gran Pantalla" class="brand-logo">
+      </div>
+
+      <nav class="top-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#carta">Carta digital</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#videojuegos">Videojuegos</a>
+        <a href="#domicilio">A domicilio</a>
+        <a href="#admin">Administración</a>
+      </nav>
+    </div>
+
+    <section class="hero-v2">
+      <div class="hero-copy">
+        <span class="eyebrow">Hamburguesas · Hot Dog · Alitas · Papas · Gorditas · Bebidas</span>
+        <h2>Un sitio moderno para ver el menú, pedir por WhatsApp y jugar mientras esperas.</h2>
+        <p>
+          Explora la carta digital, descubre promociones, revisa avisos importantes y arma tu pedido
+          con una experiencia visual más fresca, cómoda y pensada para clientes en mesa o a domicilio.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#carta">Ver carta digital</a>
+          <a class="btn btn-secondary" href="#promociones">Ver promociones</a>
+        </div>
+        <div class="feature-pills">
+          <span>Catálogo desde Excel</span>
+          <span>Pedidos rápidos</span>
+          <span>Promociones visuales</span>
+          <span>Juego promocional</span>
+        </div>
+      </div>
+
+      <div class="hero-visual glass-card">
+        <div class="hero-carousel" id="heroCarousel">
+          <div class="hero-slide active">
+            <img src="assets/alitas.jpeg" alt="Alitas con papas">
+            <div class="hero-slide-copy">
+              <strong>Alitas & papas</strong>
+              <span>Presentación antojable y estilo moderno.</span>
+            </div>
+          </div>
+          <div class="hero-slide">
+            <img src="assets/gorditas.jpeg" alt="Gorditas o quesadillas">
+            <div class="hero-slide-copy">
+              <strong>Gorditas y antojitos</strong>
+              <span>Opciones con sabor casero y toque fresco.</span>
+            </div>
+          </div>
+          <div class="hero-slide">
+            <img src="assets/chicharron.jpeg" alt="Chicharrón norteño">
+            <div class="hero-slide-copy">
+              <strong>Chicharrón norteño</strong>
+              <span>Especialidades que destacan en el menú.</span>
+            </div>
+          </div>
+          <div class="hero-slide">
+            <img src="assets/promo-flayer.jpeg" alt="Promoción Freskis">
+            <div class="hero-slide-copy">
+              <strong>Promociones del día</strong>
+              <span>Flyers activos listos para compartir.</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-dots" id="heroDots"></div>
+      </div>
+    </section>
+  </header>
+
+  <main class="page">
+    <section class="section categories-showcase">
+      <div class="section-head compact-head">
+        <div>
+          <p class="section-tag">Especialidades</p>
+          <h2>Categorías destacadas</h2>
+          <p>Iconos rápidos para comunicar mejor la variedad del restaurante.</p>
+        </div>
+      </div>
+      <div id="categoryIconGrid" class="icon-category-grid"></div>
+    </section>
+
+    <section id="carta" class="section">
+      <div class="section-head">
+        <div>
+          <p class="section-tag">Carta digital</p>
+          <h2>Menú interactivo</h2>
+          <p>Filtra el catálogo, selecciona productos y agrega comentarios o imagen por producto.</p>
+        </div>
+        <div class="search-wrap">
+          <input id="menuSearch" type="search" placeholder="Buscar por nombre, categoría, variante..." />
+        </div>
+      </div>
+
+      <div class="toolbar toolbar-labeled">
+        <label class="filter-field">
+          <span>Categoría</span>
+          <select id="filterCategoria"><option value="">Todas las categorías</option></select>
+        </label>
+        <label class="filter-field">
+          <span>Subcategoría</span>
+          <select id="filterSubcategoria"><option value="">Todas las subcategorías</option></select>
+        </label>
+        <label class="filter-field">
+          <span>Tipo de precio</span>
+          <select id="filterTipo"><option value="">Todos los tipos de precio</option></select>
+        </label>
+        <label class="filter-field">
+          <span>Orden</span>
+          <select id="sortMenu">
+            <option value="orden">Orden original</option>
+            <option value="precioAsc">Precio menor</option>
+            <option value="precioDesc">Precio mayor</option>
+            <option value="nombre">Nombre A-Z</option>
+          </select>
+        </label>
+        <button class="btn btn-ghost" id="clearFilters">Limpiar filtros</button>
+      </div>
+      <div id="filterStatus" class="filter-status"></div>
+
+      <div class="content-grid">
+        <div class="catalog-panel">
+          <div id="menuTableWrap" class="table-card"></div>
+        </div>
+        <aside class="cart-panel">
+          <div class="sticky-card order-summary-card">
+            <div class="cart-head">
+              <h3>Selección actual</h3>
+              <button class="btn btn-mini" id="emptyCart">Vaciar</button>
+            </div>
+            <div id="cartItems" class="cart-items"></div>
+            <div class="cart-total highlight-total">
+              <strong>Total:</strong>
+              <span id="cartTotal">$0.00</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="promociones" class="section alt">
+      <div class="section-head">
+        <div>
+          <p class="section-tag">Promociones</p>
+          <h2>Galería elegante de promociones</h2>
+          <p>Visualiza flyers activos con una presentación más atractiva y fácil de revisar.</p>
+        </div>
+      </div>
+      <div id="promotionsGrid" class="promo-grid enhanced"></div>
+    </section>
+
+    <section id="videojuegos" class="section">
+      <div class="section-head">
+        <div>
+          <p class="section-tag">Promoción de videojuegos</p>
+          <h2>Juega mientras esperas</h2>
+          <p>Integra aquí tu juego exportado desde Scratch o TurboWarp en formato HTML.</p>
+        </div>
+      </div>
+      <div class="game-layout">
+        <div class="game-copy glass-card">
+          <h3>Experiencia interactiva</h3>
+          <ol>
+            <li>Sube o coloca el archivo HTML del juego en la carpeta <code>game/</code>.</li>
+            <li>Desde administración define la ruta del juego, por ejemplo: <code>game/index.html</code>.</li>
+            <li>Configura la meta de puntos y el premio o descuento que recibirá el cliente.</li>
+          </ol>
+          <div id="gameRewardBox" class="reward-box"></div>
+        </div>
+        <div class="game-frame-card">
+          <iframe id="gameFrame" title="Juego promocional" src="game-placeholder.html"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="domicilio" class="section alt">
+      <div class="section-head">
+        <div>
+          <p class="section-tag">Pedidos a domicilio</p>
+          <h2>Arma tu pedido y envíalo por WhatsApp</h2>
+          <p>Selecciona productos del mismo catálogo y genera tu mensaje listo para enviar.</p>
+        </div>
+      </div>
+
+      <div class="delivery-grid">
+        <div class="glass-card">
+          <h3>Contacto y ubicación</h3>
+          <p><strong>Dirección:</strong> Calle Av Miguel Hidalgo Esq. con Lago Productos, Col. Jardines de Morelos, Ecatepec, Edo. de México</p>
+          <p><strong>Teléfonos:</strong> 55 4771 9349 · 55 77011 5965 · 561303 7792</p>
+          <p><strong>Correo:</strong> <a href="mailto:freskismx@gmail.com">freskismx@gmail.com</a></p>
+          <div class="inline-actions">
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/525547719349">WhatsApp 1</a>
+            <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://wa.me/5255770115965">WhatsApp 2</a>
+            <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://wa.me/525613037792">WhatsApp 3</a>
+          </div>
+          <div class="map-frame-wrap">
+            <iframe
+              title="Ubicación Freskis y La Gran Pantalla"
+              src="https://www.google.com/maps?q=Av%20Miguel%20Hidalgo%20Esq%20con%20Lago%20Productos%2C%20Jardines%20de%20Morelos%2C%20Ecatepec%2C%20Edo%20de%20Mexico&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3>Pedido para domicilio</h3>
+          <div id="deliveryCartItems" class="cart-items compact"></div>
+          <div class="cart-total highlight-total">
+            <strong>Total:</strong>
+            <span id="deliveryTotal">$0.00</span>
+          </div>
+          <label class="field">
+            <span>Nombre del cliente</span>
+            <input id="customerName" type="text" placeholder="Tu nombre">
+          </label>
+          <label class="field">
+            <span>Dirección de entrega</span>
+            <textarea id="customerAddress" placeholder="Escribe tu dirección completa"></textarea>
+          </label>
+          <label class="field">
+            <span>Indicaciones generales</span>
+            <textarea id="customerNotes" placeholder="Ej. sin cebolla, marcar al llegar, etc."></textarea>
+          </label>
+          <div class="inline-actions">
+            <button class="btn btn-primary" id="sendWhatsApp">Enviar pedido por WhatsApp</button>
+            <button class="btn btn-ghost" id="copyOrder">Copiar texto del pedido</button>
+          </div>
+          <pre id="orderPreview" class="order-preview"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="admin" class="section">
+      <div class="section-head">
+        <div>
+          <p class="section-tag">Administración</p>
+          <h2>Panel de control</h2>
+          <p>Panel local para GitHub Pages. Los cambios se guardan en el navegador mediante LocalStorage.</p>
+        </div>
+      </div>
+
+      <div id="adminLoginCard" class="glass-card admin-login">
+        <h3>Acceso al administrador</h3>
+        <p>Ingresa la contraseña para habilitar la carga de catálogo, promociones, avisos y videojuego.</p>
+        <div class="admin-access">
+          <input id="adminPassword" type="password" placeholder="Contraseña" />
+          <button class="btn btn-primary" id="adminLogin">Entrar</button>
+        </div>
+        <p class="mini-note">Importante: al estar publicado en GitHub Pages, esta protección es visual y local; no sustituye un backend seguro.</p>
+      </div>
+
+      <div id="adminPanel" class="hidden">
+        <div class="admin-grid">
+          <div class="glass-card">
+            <h3>1) Cargar catálogo desde Excel</h3>
+            <p>Sube un archivo XLSX con la estructura del formato proporcionado.</p>
+            <input id="catalogUpload" type="file" accept=".xlsx,.xls" />
+            <div class="inline-actions">
+              <button class="btn btn-secondary" id="restoreDefaultCatalog">Restaurar catálogo base</button>
+              <a class="btn btn-ghost" href="assets/Menu-Web-Formato.xlsx" download>Descargar formato base</a>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3>2) Subir flyers de promociones</h3>
+            <p>Se aceptan imágenes PNG/JPG o documentos PDF.</p>
+            <input id="promoUpload" type="file" accept=".png,.jpg,.jpeg,.pdf" multiple />
+            <div id="adminPromoList" class="admin-list"></div>
+          </div>
+
+          <div class="glass-card">
+            <h3>3) Avisos importantes</h3>
+            <p>Activa o desactiva un aviso general como fuera de servicio, cerrado temporalmente o mantenimiento.</p>
+            <label class="toggle-wrap">
+              <input id="noticeEnabled" type="checkbox" />
+              <span>Activar aviso importante</span>
+            </label>
+            <label class="field">
+              <span>Texto del aviso</span>
+              <textarea id="noticeText" placeholder="Ej. Cerrado temporalmente por mantenimiento"></textarea>
+            </label>
+            <label class="field">
+              <span>Archivo del aviso (PDF o imagen)</span>
+              <input id="noticeUpload" type="file" accept=".png,.jpg,.jpeg,.pdf" />
+            </label>
+            <div class="inline-actions">
+              <button class="btn btn-primary" id="saveNotice">Guardar aviso</button>
+            </div>
+            <div id="noticePreviewAdmin" class="admin-list"></div>
+          </div>
+
+          <div class="glass-card">
+            <h3>4) Configurar videojuego</h3>
+            <label class="field">
+              <span>Ruta del archivo HTML del juego</span>
+              <input id="gamePath" type="text" placeholder="game/index.html" />
+            </label>
+            <label class="field">
+              <span>Meta de puntos</span>
+              <input id="gameTarget" type="text" placeholder="Ej. 250 puntos" />
+            </label>
+            <label class="field">
+              <span>Premio o descuento</span>
+              <input id="gamePrize" type="text" placeholder="Ej. 10% de descuento o 1 refresco gratis" />
+            </label>
+            <div class="inline-actions">
+              <button class="btn btn-primary" id="saveGameSettings">Guardar configuración</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>Freskis & La Gran Pantalla</h3>
+      <p>Hamburguesas, hot dogs, alitas, papas, antojitos y bebidas con estilo fresco y moderno.</p>
+    </div>
+    <div>
+      <p><strong>Ubicación:</strong> Jardines de Morelos, Ecatepec, Edo. de México</p>
+      <p><strong>Contacto:</strong> 55 4771 9349 · 55 77011 5965 · 561303 7792</p>
+    </div>
+  </footer>
+</body>
+</html>
