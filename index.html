@@ -1,0 +1,106 @@
+
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freskis + La Gran Pantalla</title>
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="topbar"><div class="container topbar-inner">
+  <a class="brand" href="index.html">
+    <img src="assets/images/logo-freskis.jpeg" alt="Logo Freskis">
+    <div class="brand-text"><h1>Freskis + La Gran Pantalla</h1><p>Cafetería moderna, pedidos y promoción digital</p></div>
+  </a>
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="promociones.html">Promociones</a>
+    <a href="videojuegos.html">Videojuegos</a>
+    <a href="admin.html">Administración</a>
+  </nav>
+</div></header>
+
+<main>
+  <section class="hero"><div class="container hero-grid">
+    <div class="card hero-copy">
+      <span class="kicker">Carta digital + pedidos por WhatsApp</span>
+      <h2>Sabor fresco, experiencia moderna y juegos mientras esperas.</h2>
+      <p>Explora el menú, filtra productos por categoría, subcategoría o presentación, arma tu pedido y envíalo por WhatsApp. Para los productos <strong>Freskis</strong> se abre el flujo especial <strong>“Arma tu Freski en 4 pasos”</strong>.</p>
+      <div class="actions">
+        <a class="btn" href="#pedido">Hacer pedido</a>
+        <a class="btn secondary" href="promociones.html">Ver promociones</a>
+      </div>
+    </div>
+    <div class="card hero-media">
+      <img src="assets/images/flayer-promocion.jpeg" alt="Promoción Freskis">
+      <div class="hero-badge"><span>Desde</span><strong>$135 MXN</strong><span>Promociones y combos</span></div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="container">
+    <div class="info-grid">
+      <div class="card info-card"><h3 style="margin-top:0">Pide fácil</h3><p class="muted">Selecciona varios productos, agrega observaciones y modifica cantidades antes de enviar.</p></div>
+      <div class="card info-card"><h3 style="margin-top:0">A tu manera</h3><p class="muted">Para comer aquí, para llevar o envío a domicilio con nombre, dirección y ubicación.</p></div>
+      <div class="card info-card"><h3 style="margin-top:0">Entretenimiento</h3><p class="muted">Accede al apartado de videojuegos Scratch para jugar por decisión del usuario.</p></div>
+    </div>
+  </div></section>
+
+  <section class="section" id="pedido"><div class="container">
+    <div class="section-title"><div><h3>Carta digital</h3><p>Basada en el archivo de menú cargado</p></div></div>
+    <div class="grid-main">
+      <div class="card">
+        <div class="filters">
+          <div class="filter-grid">
+            <div class="field"><label>Buscar</label><input id="f-buscar" placeholder="Ej. hamburguesa, habanero, Freski"></div>
+            <div class="field"><label>Categoría</label><select id="f-categoria"></select></div>
+            <div class="field"><label>Subcategoría</label><select id="f-subcategoria"></select></div>
+            <div class="field"><label>Presentación</label><select id="f-presentacion"></select></div>
+          </div>
+        </div>
+        <div id="menu-grid" class="menu-grid"></div>
+      </div>
+
+      <aside class="card cart">
+        <div class="section-title"><div><h3>Tu pedido</h3><p>Folio automático al enviar</p></div></div>
+        <div id="cart-list" class="cart-list"></div>
+        <div class="total-box"><div class="muted">Total</div><div id="cart-total" class="total">$0.00</div></div>
+        <div class="field"><label>Tipo de consumo</label>
+          <div class="tags" style="margin-top:6px">
+            <label class="tag"><input type="radio" name="consumo" value="Para comer aquí" checked> Para comer aquí</label>
+            <label class="tag"><input type="radio" name="consumo" value="Para llevar"> Para llevar</label>
+            <label class="tag"><input type="radio" name="consumo" value="Envío a domicilio"> Envío a domicilio</label>
+          </div>
+        </div>
+        <div id="delivery-fields" class="hidden">
+          <div class="field"><label>Nombre</label><input id="envio-nombre" placeholder="Nombre de quien recibe"></div>
+          <div class="field"><label>Dirección</label><textarea id="envio-direccion" rows="3" placeholder="Dirección de envío"></textarea></div>
+          <div class="field"><label>Ubicación para WhatsApp</label><input id="envio-ubicacion" placeholder="Liga o referencia de ubicación"></div>
+        </div>
+        <div class="field"><label>Enviar comanda por WhatsApp</label></div>
+        <div class="whatsapp-group">
+          <button class="btn wa-btn" data-phone="525547719349">55 4771 9349</button>
+          <button class="btn wa-btn" data-phone="5255770115965">55 77011 5965</button>
+          <button class="btn wa-btn" data-phone="525613037792">56 1303 7792</button>
+        </div>
+        <div class="actions"><button id="empty-cart" class="btn secondary">Vaciar pedido</button></div>
+        <p class="help">WhatsApp no permite enviar un solo mensaje automáticamente a tres números a la vez. Aquí quedan listos los tres botones con la misma comanda para abrir cada chat.</p>
+      </aside>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="container"><div class="card info-card">
+    <h3 style="margin-top:0">Sucursal y teléfonos</h3>
+    <p class="muted">Calle Av. Miguel Hidalgo Esq. con Lago Productos, Col. Jardines de Morelos, Ecatepec, Edo. de México.</p>
+    <p><strong>Teléfonos:</strong> 55 4771 9349 · 55 77011 5965 · 56 1303 7792</p>
+  </div></div></section>
+</main>
+
+<footer class="footer"><div class="container">Sitio estático listo para GitHub Pages. El catálogo se lee directamente desde los archivos Excel incluidos en la carpeta <strong>data</strong> y, si algo falla, usa el respaldo JSON.</div></footer>
+<div class="audio-float"><span class="muted">Ambientación</span><button id="audio-toggle">▶ Reproducir música</button><div id="audio-status" class="muted">Cargando audio...</div><audio id="bg-audio" src="assets/audio/kam-leila.mp3" loop preload="auto" playsinline></audio></div>
+
+<div class="modal" id="freski-modal"><div class="card modal-card">
+  <div class="section-title"><div><h3>Arma tu Freski en 4 pasos</h3><p>Selecciona fruta, topping, crema y top</p></div><button id="freski-close" class="btn secondary">Cerrar</button></div>
+  <div id="freski-body"></div>
+  <div class="actions" style="margin-top:14px"><button id="freski-confirm" class="btn">Agregar al pedido</button></div>
+</div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="app.js"></script>
+</body></html>
