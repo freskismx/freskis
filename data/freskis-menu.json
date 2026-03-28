@@ -1,0 +1,191 @@
+[
+  {
+    "id": "FRUT-001",
+    "pasos": "Paso 1",
+    "categoria": "Fruta ",
+    "tipo": "Fresa",
+    "descripcion": "Deliciosa Fruta ",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "FRUT-002",
+    "pasos": "Paso 1",
+    "categoria": "Fruta ",
+    "tipo": "Mango",
+    "descripcion": "Deliciosa Fruta ",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "FRUT-003",
+    "pasos": "Paso 1",
+    "categoria": "Fruta ",
+    "tipo": "Durazno",
+    "descripcion": "Deliciosa Fruta ",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "FRUT-004",
+    "pasos": "Paso 1",
+    "categoria": "Fruta ",
+    "tipo": "Zarzamora",
+    "descripcion": "Deliciosa Fruta ",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPI-100",
+    "pasos": "Paso 2",
+    "categoria": "Topping",
+    "tipo": "Crema Irlandesa",
+    "descripcion": "Delcioso Toping",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPI-101",
+    "pasos": "Paso 2",
+    "categoria": "Topping",
+    "tipo": "Rompope Pinon",
+    "descripcion": "Delcioso Toping",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPI-102",
+    "pasos": "Paso 2",
+    "categoria": "Topping",
+    "tipo": "Rompope Almendra",
+    "descripcion": "Delcioso Toping",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPI-103",
+    "pasos": "Paso 2",
+    "categoria": "Topping",
+    "tipo": "Licor Chocolate",
+    "descripcion": "Delcioso Toping",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPI-104",
+    "pasos": "Paso 2",
+    "categoria": "Topping",
+    "tipo": "Lechera ",
+    "descripcion": "Delcioso Toping",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPI-105",
+    "pasos": "Paso 2",
+    "categoria": "Topping",
+    "tipo": "Cajeta",
+    "descripcion": "Delcioso Toping",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "CREM-200",
+    "pasos": "Paso3",
+    "categoria": "Crema ",
+    "tipo": "Crema Batida ",
+    "descripcion": "Delciosa Crema",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "CREM-201",
+    "pasos": "Paso3",
+    "categoria": "Crema ",
+    "tipo": "Nata",
+    "descripcion": "Delciosa Crema",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "CREM-202",
+    "pasos": "Paso3",
+    "categoria": "Crema ",
+    "tipo": "Chocolate",
+    "descripcion": "Delciosa Crema",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "CREM-203",
+    "pasos": "Paso3",
+    "categoria": "Crema ",
+    "tipo": "Turron ",
+    "descripcion": "Delciosa Crema",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPP-300",
+    "pasos": "Paso4",
+    "categoria": "Top",
+    "tipo": "Chispas de Turin",
+    "descripcion": "Delicioso Top",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPP-301",
+    "pasos": "Paso4",
+    "categoria": "Top",
+    "tipo": "Chispas de Unicornio",
+    "descripcion": "Delicioso Top",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPP-302",
+    "pasos": "Paso4",
+    "categoria": "Top",
+    "tipo": "Chocoreta",
+    "descripcion": "Delicioso Top",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPP-303",
+    "pasos": "Paso4",
+    "categoria": "Top",
+    "tipo": "Palanqueta",
+    "descripcion": "Delicioso Top",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPP-304",
+    "pasos": "Paso4",
+    "categoria": "Top",
+    "tipo": "Almendra ",
+    "descripcion": "Delicioso Top",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPP-305",
+    "pasos": "Paso4",
+    "categoria": "Top",
+    "tipo": "Luneta Yoghurt",
+    "descripcion": "Delicioso Top",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  },
+  {
+    "id": "TOPP-306",
+    "pasos": "Paso4",
+    "categoria": "Top",
+    "tipo": "Mazapan",
+    "descripcion": "Delicioso Top",
+    "imagen_url": "Freskis.jpeg",
+    "notas": null
+  }
+]
