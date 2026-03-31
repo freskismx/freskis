@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Birds",
+    "file": "games/Birds.html",
+    "description": "Juego Scratch/TurboWarp para entretener a clientes mientras esperan."
+  },
+  {
+    "title": "My Dog",
+    "file": "games/Dog.html",
+    "description": "Juego adicional listo para ejecutarse bajo demanda."
+  },
+  {
+    "title": "Freskis",
+    "file": "games/Freskis.html",
+    "description": "Juego temático para dinámica de puntos y premios."
+  }
+]
