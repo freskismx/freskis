@@ -15,7 +15,7 @@
   "deliveryPrompt": "Comparte aquí tu ubicación de WhatsApp/Maps",
   "musicEnabled": true,
   "musicFile": "assets/audio/Kam-Leila.mp3",
-  "noticeActive": true,
+  "noticeActive": false,
   "noticeTitle": "Aviso importante",
   "noticeText": "Consulta aquí nuestro aviso vigente.",
   "noticeFile": "assets/img/Aviso.pdf",
