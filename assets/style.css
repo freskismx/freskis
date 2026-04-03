@@ -264,45 +264,37 @@ pre.codebox{
   .app-toast{bottom:96px}
 }
 
-/* Ajuste mínimo para evitar solape del botón final de Freski con la barra móvil */
+/* ===== Fix preciso móvil: Freski vs Ver comanda ===== */
 @media (max-width: 768px){
-  .freski-builder .modal-content,
-  .freski-modal .modal-content,
-  #freskiModal .modal-content,
-  #freski-modal .modal-content,
-  .modal-content.freski-content{
-    padding-bottom: 110px;
+
+  /* deja espacio real abajo dentro del modal cuando existe la barra móvil */
+  body.mobile-cart-visible #freskiModal .modal-content{
+    padding-bottom: 140px !important;
   }
 
-  .freski-builder .modal-actions,
-  .freski-modal .modal-actions,
-  #freskiModal .modal-actions,
-  #freski-modal .modal-actions,
-  .modal-content.freski-content .modal-actions{
+  /* sube y fija el área del botón final por encima de la barra */
+  body.mobile-cart-visible #freskiModal #saveFreski{
     position: sticky;
-    bottom: 76px;
-    background: #fff;
-    padding-top: 10px;
-    z-index: 5;
-  }
-}
-/* sube el bloque de acciones final */
-  #freskiModal .modal-actions,
-  .freski-modal .modal-actions,
-  .freski-builder .modal-actions{
-    position: sticky;
-    bottom: 82px;
-    background: #fff;
-    padding-top: 10px;
-    padding-bottom: 8px;
-    z-index: 20;
-    border-top: 1px solid rgba(0,0,0,0.06);
-  }
-
-  /* por si el botón está suelto y no dentro de modal-actions */
-  #freskiModal .btn-primary,
-  .freski-modal .btn-primary,
-  .freski-builder .btn-primary{
+    bottom: 92px;
+    z-index: 10020;
+    display: block;
+    width: 100%;
+    margin-top: 12px;
     margin-bottom: 0;
   }
+
+  /* asegura fondo limpio detrás del botón */
+  body.mobile-cart-visible #freskiModal .modal-content{
+    background: #fff;
+  }
+
+  /* deja la barra por debajo del botón del modal */
+  #mobileCartBar{
+    z-index: 9999;
+  }
+
+  #freskiModal{
+    z-index: 10010;
+  }
 }
+
