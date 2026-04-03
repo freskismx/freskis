@@ -286,3 +286,23 @@ pre.codebox{
     z-index: 5;
   }
 }
+/* sube el bloque de acciones final */
+  #freskiModal .modal-actions,
+  .freski-modal .modal-actions,
+  .freski-builder .modal-actions{
+    position: sticky;
+    bottom: 82px;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    z-index: 20;
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+
+  /* por si el botón está suelto y no dentro de modal-actions */
+  #freskiModal .btn-primary,
+  .freski-modal .btn-primary,
+  .freski-builder .btn-primary{
+    margin-bottom: 0;
+  }
+}
