@@ -495,11 +495,11 @@ const APP = {
     const delivery = this.el('deliveryFields');
     if(delivery) delivery.classList.toggle('hidden', this.state.mode !== 'Envío a domicilio');
 
-    const waWrap = this.el('waButtons');
+      const waWrap = this.el('waButtons');
     if(waWrap){
       const phones = Array.isArray(this.state.config?.phones) ? this.state.config.phones.filter(Boolean) : [];
       waWrap.innerHTML = phones.map((phone, i) =>
-        `<button class="btn gold small" data-wa="${this.escapeHtml(phone)}">${this.escapeHtml(this.state.config?.whatsappLabel?.[i] || `Envia Pedido ${i+1}`)}</button>`
+        `<button class="btn gold small" data-wa="${this.escapeHtml(phone)}">${this.escapeHtml(this.state.config?.whatsappLabel?.[i] || `WhatsApp ${i+1}`)}</button>`
       ).join('');
       waWrap.querySelectorAll('[data-wa]').forEach(b => {
         b.onclick = () => this.openWhatsApp(b.dataset.wa);
