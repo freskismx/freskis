@@ -7,14 +7,14 @@
     "nombre": "Star Wars",
     "variante": "Res",
     "descripcion": "Queso americano.",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 60,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "star-wars-res",
-    "imagen_url": "assets/img/Flayer-Promocion.jpeg",
-    "notas": null
+    "imagen_url": "Hambg.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-002",
@@ -24,14 +24,14 @@
     "nombre": "Star Wars",
     "variante": "Res",
     "descripcion": "Queso americano.",
-    "Presentacion": "Combo",
+    "Presentacion ": "Combo",
     "precio": 116,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "star-wars-res-combo",
-    "imagen_url": "assets/img/Flayer-Promocion.jpeg",
-    "notas": null
+    "imagen_url": "Hambg.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-003",
@@ -41,14 +41,14 @@
     "nombre": "Star Wars",
     "variante": "Pollo",
     "descripcion": "Queso americano.",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 91,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "star-wars-pollo",
-    "imagen_url": "assets/img/Flayer-Promocion.jpeg",
-    "notas": null
+    "imagen_url": "Hambg.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-004",
@@ -57,15 +57,15 @@
     "subcategoria": "Hot Dog",
     "nombre": "Basico",
     "variante": "Salchicha",
-    "descripcion": "Mayonesa, Catsup y Mostasa",
-    "Presentacion": "Combo",
+    "descripcion": "Mayonesa, Catsup y Mostasa ",
+    "Presentacion ": "Combo",
     "precio": 20,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "hotdog-basico",
-    "imagen_url": "assets/img/Hotdog.jpeg",
-    "notas": null
+    "imagen_url": "Hotdog.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-005",
@@ -75,14 +75,14 @@
     "nombre": "con Queso",
     "variante": "Salchicha",
     "descripcion": "Mayonesa, Catsup, Mostasa y Queso americano.",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 30,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "hotdog-queso",
-    "imagen_url": "assets/img/Hotdog.jpeg",
-    "notas": null
+    "imagen_url": "Hotdog.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-006",
@@ -92,14 +92,14 @@
     "nombre": "Queso y Tocino",
     "variante": "Salchicha",
     "descripcion": "Mayonesa, Catsup, Mostasa, Queso americano y Tocino",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 40,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "hotdog-tocino",
-    "imagen_url": "assets/img/Hotdog.jpeg",
-    "notas": null
+    "imagen_url": "Hotdog.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-007",
@@ -109,14 +109,14 @@
     "nombre": "Habanero",
     "variante": "Pollo",
     "descripcion": "Con Salsa de Habanero",
-    "Presentacion": "Combo",
+    "Presentacion ": "Combo",
     "precio": 40,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Alitas-Habanero",
-    "imagen_url": "assets/img/Alitas.jpeg",
-    "notas": null
+    "imagen_url": "alitas.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-008",
@@ -126,14 +126,14 @@
     "nombre": "Parmesano",
     "variante": "Pollo",
     "descripcion": "Con Salsa y quedo parmesano",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 60,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Alitas-parmesano",
-    "imagen_url": "assets/img/Alitas.jpeg",
-    "notas": null
+    "imagen_url": "alitas.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-009",
@@ -143,14 +143,14 @@
     "nombre": "Fuego",
     "variante": "Pollo",
     "descripcion": "Con Salsa fuego",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 80,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Alitas-Fuego",
-    "imagen_url": "assets/img/Alitas.jpeg",
-    "notas": null
+    "imagen_url": "alitas.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-010",
@@ -160,14 +160,14 @@
     "nombre": "Parmesano",
     "variante": "Papas",
     "descripcion": "Con Salsa y quedo parmesano",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 60,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Papas-parmesano",
-    "imagen_url": "assets/img/Alitas.jpeg",
-    "notas": null
+    "imagen_url": "alitas.jpeg",
+    "notas": ""
   },
   {
     "id": "FASF-011",
@@ -177,14 +177,14 @@
     "nombre": "Fuego",
     "variante": "Papas",
     "descripcion": "Con Salsa fuego",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 80,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Papas-Fuego",
-    "imagen_url": "assets/img/Alitas.jpeg",
-    "notas": null
+    "imagen_url": "alitas.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-100",
@@ -194,14 +194,14 @@
     "nombre": "Zeuz",
     "variante": "Refresco",
     "descripcion": "Bubbalo",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 73,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "zeuz",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-101",
@@ -211,14 +211,14 @@
     "nombre": "Grinch",
     "variante": "Refresco",
     "descripcion": "Manzana Verde",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 70,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "grinch",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-102",
@@ -228,14 +228,14 @@
     "nombre": "Malteadas",
     "variante": "Leche",
     "descripcion": "Fresa, Vainilla, Oreo, Chocolate",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 69,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "malteadas",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-103",
@@ -245,14 +245,14 @@
     "nombre": "Helado Flotante",
     "variante": "Refresco",
     "descripcion": "Helado de vainilla o nieve de limón",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 65,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "helado-flotante",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-104",
@@ -262,14 +262,14 @@
     "nombre": "Limonada / Naranjada",
     "variante": "Agua Mineral",
     "descripcion": "Agua mineral con Limon o naranja",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 45,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "limonada-naranjada",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-105",
@@ -279,14 +279,14 @@
     "nombre": "Tehuacán con limón",
     "variante": "Agua Mineral",
     "descripcion": "Agua mineral con Limon",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 40,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "tehuacan-con-limon",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-106",
@@ -296,14 +296,14 @@
     "nombre": "Refrescos",
     "variante": "Refresco",
     "descripcion": "Refresco",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 28,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "refrescos",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-107",
@@ -313,14 +313,14 @@
     "nombre": "Limonada eléctrica",
     "variante": "Agua Mineral",
     "descripcion": "Mora Azul",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 45,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "limonada-electrica",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-108",
@@ -330,14 +330,14 @@
     "nombre": "Agua natural",
     "variante": "Agua Natural",
     "descripcion": "Fruta de Temporada",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 40,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "agua-natural",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "BEBI-109",
@@ -347,14 +347,14 @@
     "nombre": "Café Americano",
     "variante": "Cafe",
     "descripcion": "Cafe",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 35,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "cafe-americano",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "ENSA-200",
@@ -364,14 +364,14 @@
     "nombre": "Pancha",
     "variante": "Pechuga",
     "descripcion": "Mezcla de lechugas, pechuga a la plancha con queso manchego, gratinado, granos de elote, zanahoria rallada, aderezo mil islas y cruttones.",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 165,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "pancha",
-    "imagen_url": "assets/img/Hotdog.jpeg",
-    "notas": null
+    "imagen_url": "Hotdog.jpeg",
+    "notas": ""
   },
   {
     "id": "ENSA-201",
@@ -381,14 +381,14 @@
     "nombre": "Chencho",
     "variante": "Pechuga",
     "descripcion": "Mezcla de lechugas, fresas, manzana verde, queso de cabra, arándanos, plaqueta, pechuga a la parrilla y vinagreta italiana.",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 170,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "chencho",
-    "imagen_url": "assets/img/Hotdog.jpeg",
-    "notas": null
+    "imagen_url": "Hotdog.jpeg",
+    "notas": ""
   },
   {
     "id": "ENSA-202",
@@ -398,14 +398,14 @@
     "nombre": "Gladys",
     "variante": "Pechuga",
     "descripcion": "Mezcla de lechugas, arándanos, fresas, durazno, almendra, pechuga crunch, queso de cabra, aderezo honey rustic mustard.",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 175,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "gladys",
-    "imagen_url": "assets/img/Hotdog.jpeg",
-    "notas": null
+    "imagen_url": "Hotdog.jpeg",
+    "notas": ""
   },
   {
     "id": "ENSA-203",
@@ -413,16 +413,16 @@
     "categoria": "Ensaladas",
     "subcategoria": "Ensaladas",
     "nombre": "Morita",
-    "variante": null,
+    "variante": "",
     "descripcion": "Mezcla de lechugas, pechuga a la parrilla, aderezo cesar, queso parmesano y cruttones.",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 145,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "morita",
-    "imagen_url": "assets/img/Hotdog.jpeg",
-    "notas": null
+    "imagen_url": "Hotdog.jpeg",
+    "notas": ""
   },
   {
     "id": "ANMX-300",
@@ -432,14 +432,14 @@
     "nombre": "Basica",
     "variante": "Chicharron",
     "descripcion": "Chicharron prensado",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 20,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Gord-Chicharron-prensado",
-    "imagen_url": "assets/img/Gorditas.jpeg",
-    "notas": null
+    "imagen_url": "Gorditas.jpeg",
+    "notas": ""
   },
   {
     "id": "ANMX-301",
@@ -449,14 +449,14 @@
     "nombre": "Norteno",
     "variante": "Norteno",
     "descripcion": "Chicharron Norteno",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 45,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Gord-Chicharron-norte",
-    "imagen_url": "assets/img/Gorditas.jpeg",
-    "notas": null
+    "imagen_url": "Gorditas.jpeg",
+    "notas": ""
   },
   {
     "id": "ANMX-302",
@@ -466,14 +466,14 @@
     "nombre": "Paquete",
     "variante": "Chicharron",
     "descripcion": "Chicharron prensado 5 Gorditas",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 45,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Gord-Chicharron-combo",
-    "imagen_url": "assets/img/Gorditas.jpeg",
-    "notas": null
+    "imagen_url": "Gorditas.jpeg",
+    "notas": ""
   },
   {
     "id": "ANMX-303",
@@ -483,14 +483,14 @@
     "nombre": "Chicharron",
     "variante": "Chicharron",
     "descripcion": "Chicharron",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 20,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Quesa-Chicharron",
-    "imagen_url": "assets/img/Quesa.jpeg",
-    "notas": null
+    "imagen_url": "Quesa.jpeg",
+    "notas": ""
   },
   {
     "id": "ANMX-304",
@@ -500,14 +500,14 @@
     "nombre": "Pollo",
     "variante": "Pollo",
     "descripcion": "Pollo",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 45,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Quesa-Pollo",
-    "imagen_url": "assets/img/Quesa.jpeg",
-    "notas": null
+    "imagen_url": "Quesa.jpeg",
+    "notas": ""
   },
   {
     "id": "ANMX-305",
@@ -517,14 +517,14 @@
     "nombre": "Champinones",
     "variante": "Champinones",
     "descripcion": "Champinones",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 45,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Quesa-Champinones",
-    "imagen_url": "assets/img/Quesa.jpeg",
-    "notas": null
+    "imagen_url": "Quesa.jpeg",
+    "notas": ""
   },
   {
     "id": "ANMX-306",
@@ -534,14 +534,14 @@
     "nombre": "Chicharron",
     "variante": "1 Kg",
     "descripcion": "Chicharron Norteno",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 45,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "chicharron-Norteno",
-    "imagen_url": "assets/img/Chicha.jpeg",
-    "notas": null
+    "imagen_url": "Chicha.jpeg",
+    "notas": ""
   },
   {
     "id": "ANMX-307",
@@ -551,14 +551,14 @@
     "nombre": "Chicharron",
     "variante": "1/2 Kg",
     "descripcion": "Chicharron Norteno",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 90,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "chicharron-Norteno",
-    "imagen_url": "assets/img/Chicha.jpeg",
-    "notas": null
+    "imagen_url": "Chicha.jpeg",
+    "notas": ""
   },
   {
     "id": "FRES-400",
@@ -568,47 +568,132 @@
     "nombre": "Freskis Chica",
     "variante": "2 Onz",
     "descripcion": "Freskis Chica",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 20,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Freskis",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "FRES-401",
-    "orden": 307,
+    "orden": 401,
     "categoria": "Freskis",
     "subcategoria": "Freskis",
     "nombre": "Freskis Mediana",
     "variante": "4 Onz",
     "descripcion": "Freskis Mediana",
-    "Presentacion": "Individual",
+    "Presentacion ": "Individual",
     "precio": 40,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Freskis",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   },
   {
     "id": "FRES-402",
-    "orden": 307,
+    "orden": 402,
     "categoria": "Freskis",
     "subcategoria": "Freskis",
-    "nombre": "Freskis Grande",
+    "nombre": "Freskis Grande ",
     "variante": "6 Onz",
-    "descripcion": "Freskis Grande",
-    "Presentacion": "Individual",
+    "descripcion": "Freskis Grande ",
+    "Presentacion ": "Individual",
     "precio": 60,
     "moneda": "MXN",
     "activo": "Sí",
     "visible_web": "Sí",
     "slug": "Freskis",
-    "imagen_url": "assets/img/Freskis.jpeg",
-    "notas": null
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
+  },
+  {
+    "id": "PROP-500",
+    "orden": 500,
+    "categoria": "Propina o Cobro Adicional",
+    "subcategoria": "Propina o Cobro Adicional",
+    "nombre": "Propina o Cobro Adicional $5.00",
+    "variante": "$5.00 MXN",
+    "descripcion": "Gracias por su propina o cobro Adicional $5.00 MXN",
+    "Presentacion ": "Individual",
+    "precio": 5,
+    "moneda": "MXN",
+    "activo": "Sí",
+    "visible_web": "Sí",
+    "slug": "Propina-5",
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
+  },
+  {
+    "id": "PROP-501",
+    "orden": 501,
+    "categoria": "Propina o Cobro Adicional",
+    "subcategoria": "Propina o Cobro Adicional",
+    "nombre": "Propina o Cobro Adicional $10.00",
+    "variante": "$10.00 MXN",
+    "descripcion": "Gracias por su propina o cobro Adicional $10.00 MXN",
+    "Presentacion ": "Individual",
+    "precio": 10,
+    "moneda": "MXN",
+    "activo": "Sí",
+    "visible_web": "Sí",
+    "slug": "Propina-10",
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
+  },
+  {
+    "id": "PROP-502",
+    "orden": 502,
+    "categoria": "Propina o Cobro Adicional",
+    "subcategoria": "Propina o Cobro Adicional",
+    "nombre": "Propina o Cobro Adicional $20.00",
+    "variante": "$20.00 MXN",
+    "descripcion": "Gracias por su propina o cobro Adicional $20.00 MXN",
+    "Presentacion ": "Individual",
+    "precio": 20,
+    "moneda": "MXN",
+    "activo": "Sí",
+    "visible_web": "Sí",
+    "slug": "Propina-20",
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
+  },
+  {
+    "id": "PROP-503",
+    "orden": 503,
+    "categoria": "Propina o Cobro Adicional",
+    "subcategoria": "Propina o Cobro Adicional",
+    "nombre": "Propina o Cobro Adicional $50.00",
+    "variante": "$50.00 MXN",
+    "descripcion": "Gracias por su propina o cobro Adicional $50.00 MXN",
+    "Presentacion ": "Individual",
+    "precio": 50,
+    "moneda": "MXN",
+    "activo": "Sí",
+    "visible_web": "Sí",
+    "slug": "Propina-50",
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
+  },
+  {
+    "id": "PROP-504",
+    "orden": 504,
+    "categoria": "Propina o Cobro Adicional",
+    "subcategoria": "Propina o Cobro Adicional",
+    "nombre": "Propina o Cobro Adicional $100.00",
+    "variante": "$100.00 MXN",
+    "descripcion": "Gracias por su propina o cobro Adicional $100.00 MXN",
+    "Presentacion ": "Individual",
+    "precio": 100,
+    "moneda": "MXN",
+    "activo": "Sí",
+    "visible_web": "Sí",
+    "slug": "Propina-100",
+    "imagen_url": "Freskis.jpeg",
+    "notas": ""
   }
 ]
