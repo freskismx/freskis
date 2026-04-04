@@ -515,12 +515,12 @@ const APP = {
     bar.className = 'mobile-cart-bar hidden';
     bar.innerHTML = `
       <div class="mobile-cart-summary">
-        <div class="mobile-cart-kicker">Tu comanda</div>
+        <div class="mobile-cart-kicker">Tu pedido</div>
         <strong id="mobileCartCount">0 producto(s)</strong>
         <div id="mobileCartTotal" class="mobile-cart-total">$0</div>
       </div>
       <div class="mobile-cart-buttons">
-        <button type="button" class="btn small secondary" id="mobileCartViewBtn">Ver comanda</button>
+        <button type="button" class="btn small secondary" id="mobileCartViewBtn">Ver pedido</button>
       </div>`;
     document.body.appendChild(bar);
     this.el('mobileCartViewBtn')?.addEventListener('click', () => {
@@ -619,7 +619,7 @@ const APP = {
   async copyOrder(){
     try{
       await navigator.clipboard.writeText(this.composeWhatsAppText());
-      alert('Comanda copiada.');
+      alert('Pedido copiado.');
     }catch(err){
       alert('No se pudo copiar automáticamente.');
     }
