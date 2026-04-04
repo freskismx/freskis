@@ -29,20 +29,20 @@ const APP = {
   },
   safeText(value, fallback=''){
     const txt = String(value ?? '').trim();
-    return txt || fallback;
+    rern txt || fallback;
   },
   safeImage(src){
     const s = String(src || '').trim();
-    return s || 'assets/img/Freskis.jpeg';
+    rern s || 'assets/img/Freskis.jpeg';
   },
   normalizePresentation(item){
-    return item?.Presentacion || item?.['Presentacion '] || item?.presentacion || '';
+    rern item?.Presentacion || item?.['Presentacion '] || item?.presentacion || '';
   },
   normalizeStep(value){
-    return String(value || '').replace(/\s/g, '').toLowerCase();
+    rern String(value || '').replace(/\s/g, '').toLowerCase();
   },
   money(v){
-    return new Intl.NumberFormat('es-MX', {
+    rern new Intl.NumberFormat('es-MX', {
       style:'currency', currency:'MXN', maximumFractionDigits:0
     }).format(Number(v || 0));
   },
@@ -75,9 +75,9 @@ const APP = {
   async fetchJson(path){
     const response = await fetch(path, { cache: 'no-store' });
     if(!response.ok){
-      throw new Error(`No se pudo cargar ${path} (${response.status})`);
+      throw new Error(`No se pudo cargar ${path} (${response.stas})`);
     }
-    return response.json();
+    rern response.json();
   },
 
   async loadBaseData(){
@@ -100,7 +100,7 @@ const APP = {
 
   applyLocalPreviewOverrides(){
     const preview = localStorage.getItem('admin-preview-config');
-    if(!preview || !this.state.config) return;
+    if(!preview || !this.state.config) rern;
     try{
       const parsed = JSON.parse(preview);
       this.state.config = { ...this.state.config, ...parsed };
@@ -158,10 +158,10 @@ const APP = {
   // ===================== filtros =====================
   get filteredMenu(){
     const f = this.state.filters;
-    return this.state.menu
+    rern this.state.menu
       .filter(item => {
         const q = `${item.nombre || ''} ${item.variante || ''} ${item.subcategoria || ''} ${item.descripcion || ''}`.toLowerCase();
-        return (!f.categoria || item.categoria === f.categoria)
+        rern (!f.categoria || item.categoria === f.categoria)
           && (!f.subcategoria || item.subcategoria === f.subcategoria)
           && (!f.presentacion || this.normalizePresentation(item) === f.presentacion)
           && (!f.q || q.includes(f.q.toLowerCase()));
@@ -170,12 +170,12 @@ const APP = {
   },
 
   categories(){
-    return [...new Set(this.state.menu.map(x => x.categoria).filter(Boolean))];
+    rern [...new Set(this.state.menu.map(x => x.categoria).filter(Boolean))];
   },
 
   subcategories(){
     const cat = this.state.filters.categoria;
-    return [...new Set(
+    rern [...new Set(
       this.state.menu
         .filter(x => !cat || x.categoria === cat)
         .map(x => x.subcategoria)
@@ -186,7 +186,7 @@ const APP = {
   presentations(){
     const cat = this.state.filters.categoria;
     const sub = this.state.filters.subcategoria;
-    return [...new Set(
+    rern [...new Set(
       this.state.menu
         .filter(x => (!cat || x.categoria === cat) && (!sub || x.subcategoria === sub))
         .map(x => this.normalizePresentation(x))
@@ -198,7 +198,7 @@ const APP = {
     const catSel = this.el('filterCategoria');
     const subSel = this.el('filterSubcategoria');
     const preSel = this.el('filterPresentacion');
-    if(!catSel || !subSel || !preSel) return;
+    if(!catSel || !subSel || !preSel) rern;
 
     const fill = (sel, opts, placeholder) => {
       const current = sel.value;
@@ -251,7 +251,7 @@ const APP = {
     if(modeButtons){
       modeButtons.addEventListener('click', e => {
         const btn = e.target.closest('[data-mode]');
-        if(!btn) return;
+        if(!btn) rern;
         this.state.mode = btn.dataset.mode;
         this.saveCart();
         this.renderCart();
@@ -264,19 +264,19 @@ const APP = {
 
   renderMenu(){
     const wrap = this.el('menuList');
-    if(!wrap) return;
+    if(!wrap) rern;
 
     const rows = this.filteredMenu;
     if(!rows.length){
       wrap.innerHTML = `<div class="empty">No hay productos con esos filtros.</div>`;
-      return;
+      rern;
     }
 
     wrap.innerHTML = rows.map(item => {
       const present = this.normalizePresentation(item);
       const isFreski = String(item.categoria || '').toLowerCase() === 'freskis';
       const image = this.safeImage(item.imagen_url);
-      return `
+      rern `
         <article class="card menu-item">
           <div class="thumb">
             <img src="${this.escapeHtml(image)}" alt="${this.escapeHtml(item.nombre || 'Producto')}" onerror="this.src='assets/img/Freskis.jpeg'">
@@ -301,7 +301,7 @@ const APP = {
     wrap.querySelectorAll('[data-add]').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = this.state.menu.find(x => String(x.id) === String(btn.dataset.add));
-        if(!item) return;
+        if(!item) rern;
         if(String(item.categoria || '').toLowerCase() === 'freskis'){
           this.openFreskiBuilder(item);
         }else{
@@ -332,11 +332,11 @@ const APP = {
 
   updateQty(uid, delta){
     const item = this.state.cart.find(x => x.uid === uid);
-    if(!item) return;
+    if(!item) rern;
     item.qty += delta;
     if(item.qty <= 0){
       this.state.cart = this.state.cart.filter(x => x.uid !== uid);
-      if(this.state.editingCommentUid === uid) this.cancelEditComment(false);
+      if(this.state.editingCommenid === uid) this.cancelEditComment(false);
     }
     this.saveCart();
     this.renderCart();
@@ -344,19 +344,19 @@ const APP = {
 
   removeItem(uid){
     this.state.cart = this.state.cart.filter(x => x.uid !== uid);
-    if(this.state.editingCommentUid === uid) this.cancelEditComment(false);
+    if(this.state.editingCommenid === uid) this.cancelEditComment(false);
     this.saveCart();
     this.renderCart();
   },
 
   cartTotal(){
-    return this.state.cart.reduce((s, x) => s + Number(x.precio || 0) * Number(x.qty || 1), 0);
+    rern this.state.cart.reduce((s, x) => s + Number(x.precio || 0) * Number(x.qty || 1), 0);
   },
 
   startEditComment(uid){
     const item = this.state.cart.find(x => x.uid === uid);
-    if(!item) return;
-    this.state.editingCommentUid = uid;
+    if(!item) rern;
+    this.state.editingCommenid = uid;
     this.state.commentDraft = item.observaciones || '';
     this.renderCart();
     setTimeout(() => {
@@ -366,7 +366,7 @@ const APP = {
   },
 
   cancelEditComment(shouldRender = true){
-    this.state.editingCommentUid = null;
+    this.state.editingCommenid = null;
     this.state.commentDraft = '';
     if(shouldRender) this.renderCart();
   },
@@ -377,9 +377,9 @@ const APP = {
 
   saveItemComment(uid){
     const item = this.state.cart.find(x => x.uid === uid);
-    if(!item) return;
+    if(!item) rern;
     item.observaciones = (this.state.commentDraft || '').trim();
-    this.state.editingCommentUid = null;
+    this.state.editingCommenid = null;
     this.state.commentDraft = '';
     this.saveCart();
     this.renderCart();
@@ -387,7 +387,7 @@ const APP = {
 
   clearItemComment(uid){
     const item = this.state.cart.find(x => x.uid === uid);
-    if(!item) return;
+    if(!item) rern;
     item.observaciones = '';
     this.state.editingCommentUid = null;
     this.state.commentDraft = '';
