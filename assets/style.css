@@ -188,64 +188,6 @@ pre.codebox{
   border:1px solid var(--line-soft);
 }
 
-
-.app-toast{
-  position:fixed;
-  left:50%;
-  bottom:22px;
-  transform:translateX(-50%) translateY(16px);
-  background:#432818;
-  color:#fff;
-  padding:12px 16px;
-  border-radius:999px;
-  box-shadow:0 14px 30px rgba(0,0,0,.18);
-  z-index:220;
-  opacity:0;
-  pointer-events:none;
-  transition:opacity .22s ease, transform .22s ease;
-  max-width:min(calc(100% - 24px), 420px);
-  text-align:center;
-  font-weight:700;
-}
-.app-toast.show{
-  opacity:1;
-  transform:translateX(-50%) translateY(0);
-}
-
-.mobile-cart-bar{
-  position:fixed;
-  left:12px;
-  right:12px;
-  bottom:12px;
-  display:none;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  padding:12px 14px;
-  border-radius:18px;
-  background:rgba(255,253,249,.98);
-  border:1px solid var(--line-soft);
-  box-shadow:0 18px 42px rgba(67,40,24,.18);
-  z-index:180;
-}
-.mobile-cart-summary{
-  min-width:0;
-}
-.mobile-cart-kicker{
-  font-size:.78rem;
-  color:var(--muted);
-  font-weight:700;
-  margin-bottom:2px;
-}
-.mobile-cart-total{
-  font-weight:800;
-  color:var(--primary);
-  margin-top:2px;
-}
-.mobile-cart-buttons{
-  flex-shrink:0;
-}
-
 @media (max-width: 920px){
   .hero,.main-grid,.admin-grid{grid-template-columns:1fr}
   .filters{grid-template-columns:1fr 1fr}
@@ -259,54 +201,29 @@ pre.codebox{
   .hero-visual{grid-template-columns:1fr}
   .notice-chip,.cart-top,.cart-row{flex-direction:column; align-items:flex-start}
   .music-pill{padding:0; background:transparent; border:none}
-  .mobile-cart-bar{display:flex}
-  body.mobile-cart-visible{padding-bottom:96px}
-  .app-toast{bottom:96px}
 }
 
-/* Ajuste preciso móvil para Arma tu Freski */
+/* ===== Ajuste móvil: bajar la sección de comanda para que no la tape el header ===== */
 @media (max-width: 768px){
-  body.mobile-cart-visible #freskiModal.show,
-  #freskiModal.show{
-    align-items:flex-start;
-    justify-content:center;
-    padding:12px 12px 108px;
+
+  /* Cuando el botón "Ver comanda" haga scroll, deja espacio para el header fijo */
+  #cartSection{
+    scroll-margin-top: 110px;
+    margin-top: 18px;
   }
 
-  #freskiModal .modal-card{
-    width:min(100%, 560px);
-    max-height:72vh;
-    margin:0 auto;
-    overflow-y:auto;
-    border-radius:22px;
-    padding-bottom:16px;
-    overscroll-behavior:contain;
+  /* Baja visualmente el frame donde aparece "Tu comanda" */
+  #cartSection .cart-card,
+  #cartSection .card,
+  #cartSection .panel,
+  #cartSection aside{
+    margin-top: 14px;
   }
 
-  #freskiModal .modal-head{
-    position:sticky;
-    top:0;
-    z-index:3;
-    background:var(--card);
-    padding-bottom:10px;
-    margin-bottom:10px;
-  }
-
-  #freskiModal .step-grid{
-    gap:10px;
-  }
-
-  #freskiModal .modal-card > div:last-child{
-    position:sticky;
-    bottom:0;
-    z-index:4;
-    background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.92) 18%, rgba(255,255,255,1) 45%);
-    padding-top:14px;
-    margin-top:14px !important;
-  }
-
-  #freskiModal #saveFreski{
-    display:block;
-    width:100%;
+  /* Si el contenedor principal del carrito es sticky, quítalo en móvil para evitar choque con header */
+  #cartSection .sticky,
+  #cartSection [style*="position:sticky"],
+  #cartSection [style*="position: sticky"]{
+    top: 96px !important;
   }
 }
