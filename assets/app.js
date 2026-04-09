@@ -41,6 +41,28 @@ const APP = {
   normalizeStep(value){
     return String(value || '').replace(/\s/g, '').toLowerCase();
   },
+  normalizeWhatsappLabels(input){
+    const defaults = ['Solicita en Sucursal', 'Solicita a Domicilio'];
+
+    const normalizeArray = (labels) => {
+      if (!Array.isArray(labels)) return defaults;
+      const cleaned = labels.map(x => String(x ?? '').trim()).filter(Boolean);
+      return [cleaned[0] || defaults[0], cleaned[1] || defaults[1]];
+    };
+
+    if (Array.isArray(input)) {
+      return normalizeArray(input);
+    }
+
+    if (input && typeof input === 'object') {
+      return {
+        ...input,
+        whatsappLabel: normalizeArray(input.whatsappLabel)
+      };
+    }
+
+    return { whatsappLabel: defaults };
+  },
   money(v){
     return new Intl.NumberFormat('es-MX', {
       style:'currency', currency:'MXN', maximumFractionDigits:0
