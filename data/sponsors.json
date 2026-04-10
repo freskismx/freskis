@@ -1,0 +1,28 @@
+{
+  "mainSponsorHome": {
+    "enabled": true,
+    "name": "Patrocinador principal A",
+    "title": "Patrocinador principal del mes",
+    "description": "Espacio ideal para mostrar un negocio aliado sin interrumpir el flujo del pedido.",
+    "ctaText": "Conoce más",
+    "ctaUrl": "https://example.com",
+    "imageDesktop": "assets/ads/home-sponsor-desktop-demo.jpg",
+    "imageMobile": "assets/ads/home-sponsor-mobile-demo.jpg",
+    "logo": "assets/ads/home-sponsor-logo-demo.jpg",
+    "startDate": "",
+    "endDate": ""
+  },
+  "mainSponsorGames": {
+    "enabled": true,
+    "name": "Patrocinador principal B",
+    "title": "Patrocinador del entretenimiento",
+    "description": "Acompaña la experiencia de videojuegos con una promoción local útil para el cliente.",
+    "ctaText": "Ver promoción",
+    "ctaUrl": "https://example.com",
+    "imageDesktop": "assets/ads/games-sponsor-desktop-demo.jpg",
+    "imageMobile": "assets/ads/games-sponsor-mobile-demo.jpg",
+    "logo": "assets/ads/games-sponsor-logo-demo.jpg",
+    "startDate": "",
+    "endDate": ""
+  }
+}
