@@ -31,15 +31,15 @@
   "advertising": {
     "top": {
       "active": true,
-      "website": "www.record.com.mx",
-      "phone": "5547719349",
-      "phone2": "554719349",
-      "email": "gamelabcdmx@gmail.com",
+      "website": "https://chenistry.com.mx/",
+      "phone": "5613037792",
+      "phone2": "5656945438",
+      "email": "karen.rodriguez@chenistry.com.mx",
       "link": "https://wa.me/525500000000?text=Hola%2C%20quiero%20anunciarme%20en%20la%20p%C3%A1gina",
-      "title": "Patrocinador del mes",
-      "text": "Un espacio visible, elegante y no invasivo para promocionar un negocio local o una marca aliada.",
+      "title": "Chenistry",
+      "text": "Somos una empresa mexicana dedicada distribución de productos químicos. Contamos con personal altamente capacitado para brindar atención personalizada a cada uno de sus requerimientos superando las expectativas de calidad, precio y servicios con valor agregado.",
       "button": "Dame informacion",
-      "image": "assets/img/Flayer-Promocion.jpeg"
+      "image": "assets/img/Chenistry.svg"
     },
     "middle": {
       "active": true,
