@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Freskis + La Gran Pantalla</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="assets/img/Logo-Freskis.jpeg" alt="Logo Freskis">
+      <div>
+        <h1 data-business-name>Freskis + La Gran Pantalla</h1>
+        <p data-slogan>Antojo, frescura y diversión en cada pedido.</p>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a class="nav-link" href="index.html">Pedidos</a>
+      <a class="nav-link" href="promociones.html">Promociones</a>
+      <a class="nav-link" href="videojuegos.html">Videojuegos</a>
+      <a class="nav-link" href="admin.html">Administración</a>
+    </nav>
+    <div class="music-pill">
+      <button id="musicToggle" class="btn small secondary">Activar música</button>
+    </div>
+  </div>
+</header>
+<audio id="bgMusic"></audio>
+
+<main class="container">
+  <section class="hero">
+    <div class="card hero-copy">
+      <span class="kicker">Menú digital · Pedidos por WhatsApp</span>
+      <h2>Haz tu pedido rápido, claro y listo para enviar.</h2>
+      <p>El sitio principal permite filtrar el menú, agregar observaciones, armar Freskis en 4 pasos y generar una comanda para enviar por WhatsApp.</p>
+      <div id="noticeChip" class="notice-chip">
+        <div>
+          <strong data-notice-title>Aviso importante</strong>
+          <div data-notice-text>Consulta aquí nuestro aviso vigente.</div>
+        </div>
+        <button class="btn small gold">Ver aviso</button>
+      </div>
+      <div class="hero-actions">
+        <a href="#pedido" class="btn" id="startOrderBtn">Empezar pedido</a>
+        <a href="promociones.html" class="btn secondary">Ver promociones</a>
+        <a href="videojuegos.html" class="btn secondary">Ver videojuegos</a>
+      </div>
+      <div style="margin-top:18px" class="muted">
+        <strong>Horario:</strong> <span data-hours></span><br>
+        <strong>Ubicación:</strong> <span data-location></span>
+      </div>
+    </div>
+    <div class="card hero-visual">
+      <div class="shot"><img src="assets/img/Alitas.jpeg" alt="Alitas"></div>
+      <div class="shot"><img src="assets/img/Hotdog.jpeg" alt="Hot dog"></div>
+      <div class="shot"><img src="assets/img/Gorditas.jpeg" alt="Gorditas"></div>
+      <div class="shot"><img src="assets/img/Freskis.jpeg" alt="Freskis"></div>
+    </div>
+  </section>
+
+  <section id="adSlotTop" class="promo-slot hidden">
+    <div class="section-title">
+      <div>
+        <h3>Recomendado para ti</h3>
+        <p>Espacio comercial discreto para marcas o negocios locales.</p>
+      </div>
+    </div>
+    <div id="adTopCard"></div>
+  </section>
+
+  <section id="pedido">
+    <div class="section-title">
+      <div>
+        <h3>Levanta tu pedido</h3>
+        <p>Filtra por categoría, subcategoría y presentación para encontrar más rápido los productos.</p>
+      </div>
+    </div>
+
+    <div class="card filters">
+      <div class="field">
+        <label>Categoría</label>
+        <select id="filterCategoria"></select>
+      </div>
+      <div class="field">
+        <label>Subcategoría</label>
+        <select id="filterSubcategoria"></select>
+      </div>
+      <div class="field">
+        <label>Presentación</label>
+        <select id="filterPresentacion"></select>
+      </div>
+      <div class="field">
+        <label>Búsqueda</label>
+        <input id="searchInput" class="input" placeholder="Buscar producto...">
+      </div>
+    </div>
+
+    <div class="main-grid">
+      <div>
+        <div id="menuList" class="menu-list"></div>
+      </div>
+
+      <aside class="card cart">
+        <div class="cart-row">
+          <h3>Tu comanda</h3>
+          <div id="cartCount" class="muted">0 producto(s)</div>
+        </div>
+        <div id="cartList" class="cart-list"></div>
+
+        <div class="total-box">
+          <div class="muted">Total estimado</div>
+          <strong id="cartTotal">$0</strong>
+        </div>
+
+        <div style="margin-top:16px">
+          <div class="field">
+            <label>Tipo de consumo</label>
+            <div id="modeButtons" class="mode-grid">
+              <button class="mode-btn" data-mode="Para comer aquí">Para comer aquí</button>
+              <button class="mode-btn" data-mode="Para llevar">Para llevar</button>
+              <button class="mode-btn" data-mode="Envío a domicilio">Envío a domicilio</button>
+            </div>
+          </div>
+          <div id="deliveryFields" class="hidden" style="margin-top:10px">
+            <div class="field"><label>Nombre</label><input id="deliveryName" class="input" placeholder="Nombre del cliente"></div>
+            <div class="field"><label>Dirección</label><textarea id="deliveryAddress" placeholder="Dirección de entrega"></textarea></div>
+            <div class="field"><label>Ubicación para WhatsApp/Maps</label><input id="deliveryLocation" class="input" placeholder="Pega aquí el link de ubicación"></div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px; display:grid; gap:10px">
+          <div id="waButtons" style="display:grid; gap:10px"></div>
+          <button id="copyOrderBtn" class="btn secondary">Copiar comanda</button>
+          <button id="clearCartBtn" class="btn secondary">Vaciar pedido</button>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="adSlotMiddle" class="promo-slot hidden">
+    <div class="section-title">
+      <div>
+        <h3>Negocio recomendado</h3>
+        <p>Un espacio visible sin interrumpir el pedido.</p>
+      </div>
+    </div>
+    <div id="adMiddleCard"></div>
+  </section>
+
+  <section id="alliesSection" class="hidden">
+    <div class="section-title">
+      <div>
+        <h3>Aliados</h3>
+        <p>Marcas, servicios y negocios recomendados de la zona.</p>
+      </div>
+    </div>
+    <div id="alliesGrid" class="allies-grid"></div>
+  </section>
+</main>
+
+<div id="freskiModal" class="modal">
+  <div class="modal-card">
+    <div class="modal-head">
+      <div>
+        <span class="kicker">Arma tu Freski en 4 pasos</span>
+        <h3 id="freskiTitle" style="margin:10px 0 0">Freski</h3>
+      </div>
+      <button id="closeFreski" class="btn secondary small">Cerrar</button>
+    </div>
+    <div id="freskiBody" class="step-grid"></div>
+    <div style="margin-top:12px" class="field">
+      <label>Observaciones</label>
+      <textarea id="freskiObs" placeholder="Ejemplo: con menos crema, sin topping extra..."></textarea>
+    </div>
+    <div style="margin-top:12px; display:flex; justify-content:flex-end">
+      <button id="saveFreski" class="btn">Agregar al pedido</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">Diseño móvil primero para Android e iPhone.</div>
+</footer>
+<script src="assets/app.js"></script>
+<script>APP.boot('index')</script>
+</body>
+</html>
