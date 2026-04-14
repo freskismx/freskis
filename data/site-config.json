@@ -43,30 +43,27 @@
       "text": "Este segundo espacio comercial mantiene la navegación limpia y acompaña el recorrido del cliente.",
       "button": "Ver opción",
       "link": "https://wa.me/525500000000?text=Me%20interesa%20el%20espacio%20publicitario%20intermedio",
-      "image": "assets/img/Freskis.jpeg"
+      "image": "assets/img/Flayer-Promocion.jpeg"
     },
     "alliesEnabled": true,
     "allies": [
       {
+        "id": "ef271846-c2bc-4ae9-aa12-819cfb3321a4",
         "name": "Aliado local 1",
         "description": "Logo, descripción corta y enlace directo para un aliado comercial.",
         "image": "assets/img/Logo-Freskis.jpeg",
         "link": "https://wa.me/525500000000?text=Quiero%20informaci%C3%B3n%20sobre%20Aliados",
-        "button": "Conocer"
+        "button": "Conocer",
+        "priority": 3
       },
       {
+        "id": "a85f7b25-80f0-4883-9a5d-37f239cfce96",
         "name": "Aliado local 2",
         "description": "Ideal para negocios vecinos, servicios o marcas con presencia permanente.",
         "image": "assets/img/Logo-LGP.jpeg",
         "link": "https://wa.me/525500000000?text=Quiero%20informaci%C3%B3n%20sobre%20Aliados",
-        "button": "Ver perfil"
-      },
-      {
-        "name": "Aliado local 3",
-        "description": "Espacio discreto para recomendaciones comerciales que no molestan al cliente.",
-        "image": "assets/img/Flayer-Promocion.jpeg",
-        "link": "https://wa.me/525500000000?text=Quiero%20informaci%C3%B3n%20sobre%20Aliados",
-        "button": "Saber más"
+        "button": "Ver perfil",
+        "priority": 2
       }
     ]
   }
