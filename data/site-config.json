@@ -43,15 +43,15 @@
     },
     "middle": {
       "active": true,
-      "website": "www.cnn.com.mx",
+      "website": "https://gamelabmx.github.io/GameLab/index.html",
       "phone": "5547719349",
-      "phone2": "5547719349",
-      "email": "gamelabcdmx@gmail.com",
-      "link": "https://wa.me/525500000000?text=Me%20interesa%20el%20espacio%20publicitario%20intermedio",
-      "title": "Negocio que nos patrocina",
-      "text": "Este segundo espacio comercial mantiene la navegación limpia y acompaña el recorrido del cliente.",
+      "phone2": "5591618934",
+      "email": "vicente.rodriguezm@outlook.com",
+      "link": "https://wa.me/525500000000?text=Me%2pProporciona%20informes%20sobre%20los%20cursos",
+      "title": "Academia Digital GameLab",
+      "text": "En Academia Digital GameLab formamos a niños y jóvenes en programación, creatividad y pensamiento lógico con una propuesta moderna, segura y alineada con las habilidades del futuro.",
       "button": "Ver opción",
-      "image": "assets/img/Flayer-Promocion.jpeg"
+      "image": "assets/img/logo-gamelab.png"
     },
     "alliesEnabled": true,
     "allies": [
