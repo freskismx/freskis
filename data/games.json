@@ -1,5 +1,10 @@
 [
   {
+    "title": "Cazafantasmas",
+    "description": "Disfruta de este juego de realidad aumentada usando la camara de tu dispositivo",
+    "file": "games/Cazafantasmas.html"
+  },
+  {
     "title": "Birds",
     "file": "games/Birds.html",
     "description": "Juego Scratch/TurboWarp para entretener a clientes mientras esperan."
